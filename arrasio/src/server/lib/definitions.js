@@ -3873,13 +3873,7 @@ exports.basic = {
                             SHOOT_SETTING: combineStats([g.basic, g.sniper, g.morerecoil]),
                             TYPE: exports.drone,
                         }, }, {
-                    POSITION: [  13,    8.5,     1,      0,      0,     180,     0,   ],
-                        }, {
-                    POSITION: [   4,    8.5,    1.7,    13,      0,     180,     0,   ], 
-                        PROPERTIES: {
-                            SHOOT_SETTINGS: combineStats([g.trap]),
-                            TYPE: exports.trap, STAT_CALCULATOR: gunCalcNames.trap,
-                        }, },
+                    POSITION: [
                         
                 ]
             };
