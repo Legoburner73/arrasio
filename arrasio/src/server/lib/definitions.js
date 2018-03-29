@@ -3863,7 +3863,7 @@ exports.basic = {
                 PARENT: [exports.genericTank],
                 LABEL: 'Mothership',
                 BODY: {
-                    ACCELERATION: base.ACCEL / 3,
+                    ACCELERATION: base.ACCEL / 2,
                     FOV: base.FOV * 2
                 },
                 DANGER: 8,
