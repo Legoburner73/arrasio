@@ -1404,7 +1404,7 @@ exports.basic = {
                 POSITION: [  18,    10,    -1.4,     0,      0,      0,      0,   ], 
                 PROPERTIES: {
                     SHOOT_SETTINGS: combineStats([g.basic, g.op]),
-                    TYPE: [exports.booster, { SHAPE: 5, }],
+                    TYPE: [exports.bullet, { SHAPE: 5, }],
                 }, }, 
             ],
         };
