@@ -1403,6 +1403,7 @@ exports.basic = {
             GUNS: [ { /*** LENGTH  WIDTH   ASPECT    X       Y     ANGLE   DELAY */
                 POSITION: [  18,    10,    -1.4,     0,      0,      0,      0,   ], 
                 PROPERTIES: {
+                    MAX_CHILDREN: 6,
                     SHOOT_SETTINGS: combineStats([g.basic, g.op]),
                     TYPE: [exports.minion, { SHAPE: 5, }],
                 }, }, 
