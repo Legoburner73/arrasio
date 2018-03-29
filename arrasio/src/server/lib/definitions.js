@@ -1,4 +1,4 @@
-// GUN DEFINITIONS
+
 const combineStats = function(arr) {
     try {
     // Build a blank array of the appropiate length
@@ -1404,7 +1404,7 @@ exports.basic = {
                 POSITION: [  18,    10,    -1.4,     0,      0,      0,      0,   ], 
                 PROPERTIES: {
                     SHOOT_SETTINGS: combineStats([g.basic, g.op]),
-                    TYPE: [exports.bullet, { SHAPE: 5, }],
+                    TYPE: [exports.minion, { SHAPE: 5, }],
                 }, }, 
             ],
         };
@@ -3859,6 +3859,30 @@ exports.basic = {
                         }, },
                 ],
             };
+            exports.mothership = {
+                PARENT: [exports.generticTank],
+                LABEL: 'Mothership',
+                BODY: {
+                    ACCELERATION: base.ACCEL / 3,
+                    FOV: base.FOV * 2
+                },
+                DANGER: 8,
+                GUNS: [ { /*** LENGTH  WIDTH   ASPECT    X       Y     ANGLE   DELAY */
+                    POSITION: [  20,    8.5,     1,      0,      0,      0,      0,   ],
+                        PROPERTIES: {
+                            SHOOT_SETTING: combineStats([g.basic, g.sniper, g.morerecoil]),
+                            TYPE: exports.drone,
+                        }, }, {
+                    POSITION: [  13,    8.5,     1,      0,      0,     180,     0,   ],
+                        }, {
+                    POSITION: [   4,    8.5,    1.7,    13,      0,     180,     0,   ], 
+                        PROPERTIES: {
+                            SHOOT_SETTINGS: combineStats([g.trap]),
+                            TYPE: exports.trap, STAT_CALCULATOR: gunCalcNames.trap,
+                        }, },
+                        
+                ]
+            };
 
 // UPGRADE PATHS
 exports.testbed.UPGRADES_TIER_1 = [
@@ -3868,7 +3892,8 @@ exports.testbed.UPGRADES_TIER_1 = [
     exports.hiveshooter, 
     exports.brutalizer,
     exports.shotgun2,
-    exports.hybridmini
+    exports.hybridmini,
+    exports.mothership
 ];
 
 exports.basic.UPGRADES_TIER_1 = [exports.twin, exports.sniper, exports.machine, exports.flank, exports.director];
@@ -3915,7 +3940,6 @@ exports.basic.UPGRADES_TIER_1 = [exports.twin, exports.sniper, exports.machine, 
         exports.double.UPGRADES_TIER_3 = [exports.tripletwin, exports.autodouble];
         exports.bent.UPGRADES_TIER_3 = [exports.penta, exports.benthybrid];
         exports.triple.UPGRADES_TIER_3 = [exports.quint];
-
     exports.sniper.UPGRADES_TIER_2 = [exports.assassin, exports.overseer, exports.hunter, exports.builder];
         exports.assassin.UPGRADES_TIER_3 = [exports.ranger];
         exports.overseer.UPGRADES_TIER_3 = [exports.overlord, exports.battleship
@@ -3928,7 +3952,6 @@ exports.basic.UPGRADES_TIER_1 = [exports.twin, exports.sniper, exports.machine, 
         exports.gunner.UPGRADES_TIER_3 = [exports.autogunner, exports.mortar, exports.stream];
         exports.artillery.UPGRADES_TIER_3 = [exports.mortar, exports.spread, exports.skimmer];
         exports.machine.UPGRADES_TIER_3 = [exports.spray];
-
     exports.flank.UPGRADES_TIER_2 = [exports.hexa, exports.tri, exports.auto3, exports.flanktrap];
         exports.hexa.UPGRADES_TIER_3 = [exports.octo];
         exports.tri.UPGRADES_TIER_3 = [exports.booster, exports.fighter, exports.bomber, exports.autotri];
