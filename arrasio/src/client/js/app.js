@@ -498,13 +498,13 @@ global.time = 0;
 
 // Window setup <3
 global.mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent);
-var serverName = 'Unknown Server';
+var serverName = 'Diepcord Server - Hosted by LegoDev';
 window.onload = () => {
     // Server name stuff
-    switch (window.location.hostname) {
+    /*switch (window.location.hostname) {
         case '139.162.69.30': serverName = '🇯🇵 arras-linode-tokyo'; break;
         case '172.104.9.164': serverName = '🇺🇸 arras-linode-newark'; break;
-    }
+    }*/
     document.getElementById('serverName').innerHTML = '<h4 class="nopadding">' + serverName + '</h4>';
     // Save forms
     util.retrieveFromLocalStorage('playerNameInput');
@@ -1027,7 +1027,7 @@ const socketInit = (() => {
     })();
     // The initialization function (this is returned)
     return port => {
-        let socket = new WebSocket('ws://' + window.location.hostname + ':' + port);
+        let socket = new WebSocket('wss://thin-workshop.glitch.me');
         // Set up our socket
         socket.binaryType = 'arraybuffer';
         socket.open = false;
