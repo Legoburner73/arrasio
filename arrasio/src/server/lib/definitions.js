@@ -3860,7 +3860,7 @@ exports.basic = {
                 ],
             };
             exports.mothership = {
-                PARENT: [exports.generticTank],
+                PARENT: [exports.genericTank],
                 LABEL: 'Mothership',
                 BODY: {
                     ACCELERATION: base.ACCEL / 3,
