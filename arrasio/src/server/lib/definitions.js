@@ -1399,13 +1399,12 @@ exports.basic = {
                 DENSITY: 20,
                 FOV: 2,
             },
-            MAX_CHILDREN: 6,
             TURRETS: [],
             GUNS: [ { /*** LENGTH  WIDTH   ASPECT    X       Y     ANGLE   DELAY */
                 POSITION: [  18,    10,    -1.4,     0,      0,      0,      0,   ], 
                 PROPERTIES: {
                     SHOOT_SETTINGS: combineStats([g.basic, g.op]),
-                    TYPE: [exports.baseprotector, { SHAPE: 5, }],
+                    TYPE: [exports.booster, { SHAPE: 5, }],
                 }, }, 
             ],
         };
