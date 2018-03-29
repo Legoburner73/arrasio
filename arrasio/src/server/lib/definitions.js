@@ -3873,7 +3873,46 @@ exports.basic = {
                             SHOOT_SETTING: combineStats([g.basic, g.sniper, g.morerecoil]),
                             TYPE: exports.drone,
                         }, }, {
-                    POSITION: [
+                    POSITION: [  20,    8.5,     1,      0,      0,     22.5,    0,   ],
+                        PROPERTIES: {
+                            SHOOT_SETTING: combineStats([g.basic, g.sniper, g.morerecoil]),
+                            TYPE: exports.minion,
+                        }, }, {
+                    POSITION: [  20,    8.5,     1,      0,      0,      45,      0,   ],
+                        PROPERTIES: {
+                            SHOOT_SETTING: combineStats([g.basic, g.sniper, g.morerecoil]),
+                            TYPE: exports.drone,
+                        }, }, {
+                    POSITION: [  20,    8.5,     1,      0,      0,      67.5,      0,   ],
+                        PROPERTIES: {
+                            SHOOT_SETTING: combineStats([g.basic, g.sniper, g.morerecoil]),
+                            TYPE: exports.minion,
+                        }, }, {
+                    POSITION: [  20,    8.5,     1,      0,      0,      90,      0,   ],
+                        PROPERTIES: {
+                            SHOOT_SETTING: combineStats([g.basic, g.sniper, g.morerecoil]),
+                            TYPE: exports.drone,
+                        }, }, {
+                    POSITION: [  20,    8.5,     1,      0,      0,      112.5,      0,   ],
+                        PROPERTIES: {
+                            SHOOT_SETTING: combineStats([g.basic, g.sniper, g.morerecoil]),
+                            TYPE: exports.minion,
+                        }, }, {
+                    POSITION: [  20,    8.5,     1,      0,      0,      135,      0,   ],
+                        PROPERTIES: {
+                            SHOOT_SETTING: combineStats([g.basic, g.sniper, g.morerecoil]),
+                            TYPE: exports.drone,
+                        }, }, {
+                    POSITION: [  20,    8.5,     1,      0,      0,      157.5,      0,   ],
+                        PROPERTIES: {
+                            SHOOT_SETTING: combineStats([g.basic, g.sniper, g.morerecoil]),
+                            TYPE: exports.minion,
+                        }, }, {
+                    POSITION: [  20,    8.5,     1,      0,      0,      180,      0,   ],
+                        PROPERTIES: {
+                            SHOOT_SETTING: combineStats([g.basic, g.sniper, g.morerecoil]),
+                            TYPE: exports.drone,
+                        }, },
                         
                 ]
             };
